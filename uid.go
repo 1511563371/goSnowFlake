@@ -68,7 +68,7 @@ func (iw *IdWorker) timeGen() int64 {
 }
 
 func (iw *IdWorker) timeReGen(last int64) int64 {
-	ts := time.Now().UnixNano()
+	ts := time.Now().UnixNano() / 1000 / 1000
 	for {
 		if ts <= last {
 			ts = iw.timeGen()
