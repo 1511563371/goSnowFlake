@@ -70,7 +70,7 @@ func (iw *IdWorker) timeGen() int64 {
 func (iw *IdWorker) timeReGen(last int64) int64 {
 	ts := time.Now().UnixNano()
 	for {
-		if ts < last {
+		if ts <= last {
 			ts = iw.timeGen()
 		} else {
 			break
