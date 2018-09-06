@@ -19,3 +19,6 @@
 ## 1.1.0 (2016-09-29)
 
 - [x] Merge Pull Request,Fix algorithm bug and add ParseId
+
+### 1.1.1 (2018-09-06)
+- [x] fix timeReGen[issuce](https://github.com/zheng-ji/goSnowFlake/issues/9) 
